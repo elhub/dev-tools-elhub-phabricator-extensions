@@ -57,6 +57,7 @@ final class HarbormasterTeamCityBuildStepImplementation
         ->setViewer($viewer)
         ->withPHIDs($all_phids)
         ->execute();
+    $repos = mpull($repos, null, 'getPHID');
     $buildRepo = $repos[$repository_phid];
     $repoName = $buildRepo->getName();
 
