@@ -1,4 +1,4 @@
-# Project Name
+# elhub-phabricator-extensions
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -25,7 +25,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About
 
-One to two paragraph statement about the project and what it does.
+This repository contains the source code for Elhub's extensions to the Phabricator platform, so at to be able to specialize it
+to our needs. These extensions provide custom integration with Elhub's systems.
 
 
 <!-- GETTING STARTED -->

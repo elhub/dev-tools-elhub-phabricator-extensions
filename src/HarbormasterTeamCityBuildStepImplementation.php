@@ -50,7 +50,17 @@ final class HarbormasterTeamCityBuildStepImplementation
 
     // Combined TeamCity URI
     $uri = $settings['uri'] . '/app/rest/buildQueue';
-    $callsign = str_replace(" ", "", ucfirst(str_replace("-", " ", $variables['repository.callsign'])));
+
+    $repository_phid = $variables['repository.phid'];
+    $all_phids[] = $repository_phid;
+    $repos = id(new PhabricatorRepositoryQuery())
+        ->setViewer($viewer)
+        ->withPHIDs($all_phids)
+        ->execute();
+    $buildRepo = $repos[$repository_phid];
+    $repoName = $buildRepo->getName();
+
+    $callsign = str_replace(" ", "", ucfirst(str_replace("-", " ", $repoName)));
     $buildId = str_replace("[id]", $callsign, $settings['buildId']);
 
     $method = 'POST';
