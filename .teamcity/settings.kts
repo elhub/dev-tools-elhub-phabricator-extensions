@@ -23,7 +23,7 @@ project {
         param("teamcity.ui.settings.readOnly", "true")
     }
 
-    sequential {
+    val buildChain = sequential {
         buildType(
             SonarScan(
                 SonarScan.Config(
