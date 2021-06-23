@@ -18,6 +18,7 @@ version = "2020.2"
 project {
 
     val projectId = "no.elhub.tools:dev-tools-elhub-phabricator-extensions"
+    val projectType = ProjectType.GENERIC
 
     params {
         param("teamcity.ui.settings.readOnly", "true")
@@ -28,7 +29,7 @@ project {
             SonarScan(
                 SonarScan.Config(
                     vcsRoot = DslContext.settingsRoot,
-                    type = ProjectType.GENERIC,
+                    type = projectType,
                     sonarId = projectId,
                     sonarProjectSources = "src"
                 )
@@ -44,7 +45,7 @@ project {
             AutoRelease(
                 AutoRelease.Config(
                     vcsRoot = DslContext.settingsRoot,
-                    type = ProjectType.GENERIC,
+                    type = projectType,
                     sshAgent = githubAuth
                 )
             ) {
@@ -65,7 +66,7 @@ project {
         CodeReview(
             CodeReview.Config(
                 vcsRoot = DslContext.settingsRoot,
-                type = ProjectType.GENERIC,
+                type = projectType,
                 sonarId = projectId,
                 sonarProjectSources = "src"
             )
