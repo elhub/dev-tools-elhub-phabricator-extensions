@@ -13,11 +13,11 @@ import no.elhub.common.build.configuration.SonarScan
 import no.elhub.common.build.configuration.UnitTest
 import no.elhub.common.build.configuration.constants.GlobalTokens
 
-version = "2020.2"
+version = "2021.2"
 
 project {
 
-    val projectId = "no.elhub.tools:dev-tools-elhub-phabricator-extensions"
+    val projectId = "no.elhub.devxp:devxp-elhub-phabricator-extensions"
     val projectType = ProjectType.GENERIC
 
     params {
@@ -47,6 +47,16 @@ project {
                     vcsRoot = DslContext.settingsRoot,
                     type = projectType,
                     sshAgent = githubAuth
+                )
+            )
+        )
+
+        buildType(
+            PublishDocs(
+                PublishDocs.Config(
+                    vcsRoot = DslContext.settingsRoot,
+                    type = projectType,
+                    dest = "devxp/devxp-elhub-phabricator-extensions"
                 )
             ) {
                 triggers {

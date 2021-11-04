@@ -1,0 +1,13 @@
+site:
+  baseUrl: "https://docs.elhub.cloud/devxp/devxp-elhub-phabricator-extensions"
+  about:
+    siteName: devxp-elhub-phabricator-extensions
+
+Elhub:
+  legacySearch: false
+  metaComponents:
+    - type: 'orchidSearch'
+  menu:
+    - type: "wiki"
+      asSubmenu: true
+      submenuTitle: "Guide Book"
