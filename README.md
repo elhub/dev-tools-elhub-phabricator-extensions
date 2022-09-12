@@ -9,19 +9,6 @@
 [<img src="https://sonar.elhub.cloud/api/project_badges/measure?project=no.elhub.devxp%3Adevxp-elhub-phabricator-extensions&metric=vulnerabilities" alt="">](https://sonar.elhub.cloud/dashboard?id=no.elhub.devxp%3Adevxp-elhub-phabricator-extensions)
 [<img src="https://sonar.elhub.cloud/api/project_badges/measure?project=no.elhub.devxp%3Adevxp-elhub-phabricator-extensions&metric=coverage" alt="">](https://sonar.elhub.cloud/dashboard?id=no.elhub.devxp%3Adevxp-elhub-phabricator-extensions)
 
-## Table of Contents
-
-* [About](#about)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Testing](#testing)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [Owners](#owners)
-* [License](#license)
-
 ## About
 
 The **elhub-phabricator-extensions** add custom functionality into Elhub's phabricator installation.
@@ -65,10 +52,6 @@ matches with the automatically generated ID in TeamCity.
 ## Testing
 
 N/A
-
-## Roadmap
-
-See the [open issues](https://jira.elhub.cloud/issues/?jql=project%20%3D%20TD%20AND%20component%20%3D%20elhub-phabricator-extensions%20AND%20resolution%20%3D%20Unresolved) for a list of proposed features (and known issues).
 
 ## Contributing
 
