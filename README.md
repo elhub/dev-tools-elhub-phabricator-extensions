@@ -1,5 +1,5 @@
 > [!WARNING]  
-> This project has been archived and is no longer being developed.
+> This project has been archived and is no longer being actively developed by Elhub.
  
 # elhub-phabricator-extensions
 
